@@ -7,12 +7,12 @@
         default_face_key = "000fa92e90004202aced5d976886573d5d679585a376fdd605877a7764b8987c00000000000007520000037f0000000f00000037049140010000000000000000" 
         color = "FF224277" 
         color2 = "FFF5F5F5" 
-        cloth_alternative_color1 = "FF224277" 
-        cloth_alternative_color2 = "FFF5F5F5" 
+        cloth_alternative_color1 = "FF710083" 
+        cloth_alternative_color2 = "FF0B0C11" 
         banner_background_color1 = "FF224277" 
         banner_foreground_color1 = "FFF5F5F5" 
-        banner_background_color2 = "FF224277" 
-        banner_foreground_color2 = "FFF5F5F5" 
+        banner_background_color2 = "FF710083" 
+        banner_foreground_color2 = "FF0B0C11" 
         faction_banner_key = "1.12.12.1536.1536.760.877.1.0.90.437.35.0.512.512.764.764.0.0.0"
     />
 </BasicCultures>
