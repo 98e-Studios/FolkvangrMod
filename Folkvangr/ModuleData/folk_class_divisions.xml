@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- multiplier: Captain only: This number is multiplied with the BotsPerFormation setting to get the final amount of troops to spawn. -->
+<!-- cost: Skirmish only: The gold cost of this troop. -->
+<!-- armor: This armor value is applied to every body part, regardless of equipment. -->
+<!-- movement_speed: Goes from 0.0 to 1.0. This will be multiplied with 'bipedal_speed_multiplier' (in native_parameters.xml). Human only. -->
+<!-- combat_movement_speed: Goes from 0.0 to 1.0. This will be multiplied with 'movement_speed' during combat. Human only. -->
+<!-- acceleration: Goes from 0.0 to 1.0. This will be multiplied with 'bipedal_acceleration_multiplier'. Human only. -->
+<!-- hitpoints: Goes from 1 to infinity. Default is 100. Human only. -->
+<MPClassDivisions>
+	<!-- Folkvangr -->
+	<MPClassDivision
+		id="folk_shock_infantry_folkvangr"
+		hero="folk_shock_infantry_folkvangr"
+		troop="folk_shock_infantry_folkvangr"
+		hero_idle_anim="act_sturgia_mp_ulfhednar_idle"
+		troop_idle_anim="act_idle_2h_1"
+		cost="130"
+		icon="Special_Axeman"
+		armor="2"
+		movement_speed="0.81"
+		combat_movement_speed="0.9"
+		acceleration="1.6">
+		<Perks>
+		</Perks>
+	</MPClassDivision>
+	<MPClassDivision
+		id="folk_heavy_infantry_folkvangr"
+		hero="folk_heavy_infantry_folkvangr"
+		troop="folk_heavy_infantry_folkvangr"
+		hero_idle_anim="act_sturgia_mp_huskarl_idle"
+		troop_idle_anim="act_idle_unarmed_1"
+		cost="160"
+		icon="Infantry_Heavy"
+		armor="42"
+		movement_speed="0.80"
+		combat_movement_speed="0.9"
+		acceleration="2.4">
+		<Perks>
+			<Perk
+				game_mode="all"
+				name="{=9XtgLuAL}Axe Specialist"
+				description="{=ITnsSkJr}You are experienced in all disciplines of axe combat, with a deep hate for wood.{newline} {newline}Grants Axe{newline} {newline}+20% Damage Dealt to Shields"
+				icon="PerkHeavyAxe"
+				perk_list="1">
+				<Effect
+					type="ShieldDamage"
+					value="0.2" />
+				<OnSpawnEffect
+					type="AlternativeEquipmentOnSpawn"
+					slot="Item1"
+					item="mp_sturgia_heavy_axe" />
+			</Perk>
+			<Perk
+				game_mode="all"
+				name="{=VI4gQt8Q}Mace"
+				description="{=7I7fd6OQ}Grants Heavy Mace, effective against armored opponents."
+				icon="PerkMaces"
+				perk_list="1">
+				<OnSpawnEffect
+					type="AlternativeEquipmentOnSpawn"
+					slot="Item1"
+					item="mp_battnia_heavy_mace" />
+			</Perk>
+			<Perk
+				game_mode="all"
+				name="{=E1bKcoaT}Cavalry Breaker"
+				description="{=eMd39oQf}You are an expert at fighting against cavalry on foot and mastered to use cavalry's speed against itself.{newline} {newline}Grants Long Spear.{newline} {newline}+100% Damage to Mounts with Melee Weapons{newline}+50% Speed Bonus Damage with Melee Weapons on Piercing Attacks"
+				icon="PerkHorseHunters"
+				perk_list="1">
+				<ConditionalEffect>
+					<Conditions>
+						<Condition
+							type="AgentStatus"
+							agent_status="OnFoot" />
+					</Conditions>
+					<Effects>
+						<Effect
+							type="SpeedBonus"
+							value="0.5"
+							hit_type="Melee"
+							damage_type="Pierce" />
+						<Effect
+							type="MountDamage"
+							value="1.0"
+							hit_type="Melee" />
+					</Effects>
+				</ConditionalEffect>
+				<OnSpawnEffect
+					type="AlternativeEquipmentOnSpawn"
+					slot="Item2"
+					item="mp_sturgia_long_spear" />
+			</Perk>
+		</Perks>
+	</MPClassDivision>
+	<MPClassDivision
+		id="folk_light_ranged_folkvangr"
+		hero="folk_light_ranged_folkvangr"
+		troop="folk_light_ranged_folkvangr"
+		hero_idle_anim="act_sturgia_mp_hunter_idle"
+		troop_idle_anim="act_sturgia_mp_hunter_idle"
+		cost="120"
+		icon="Archer_Light"
+		armor="10"
+		movement_speed="0.74"
+		combat_movement_speed="0.7"
+		acceleration="3.0">
+		<Perks>
+			<!-- First perks-->
+			<Perk
+				game_mode="all"
+				name="{=aeWqECxF}Faster Longbow"
+				description="{=rc3a4QFp}Grants longbow, made from flexible wood, this bow can be drawn a lot quicker."
+				icon="PerkShortBows"
+				perk_list="1">
+				<OnSpawnEffect
+					type="AlternativeEquipmentOnSpawn"
+					slot="Item0"
+					item="mp_woodland_long_bow"
+					target="Player" />
+			</Perk>
+			<Perk
+				game_mode="all"
+				name="{=E7WWiQCf}Range Longbow"
+				description="{=XyrRqfb6}Grants longbow, made from strong wood, makes this bow shoot especially fast and far."
+				icon="PerkLongBows"
+				perk_list="1">
+				<OnSpawnEffect
+					type="AlternativeEquipmentOnSpawn"
+					slot="Item0"
+					item="mp_yeow_long_bow"
+					target="Player" />
+			</Perk>
+			<Perk
+				game_mode="all"
+				name="{=DlKYZgA3}Improved Armor"
+				description="{=IUsT27oV}Provides +9 armor."
+				icon="PerkToughness"
+				perk_list="1">
+				<OnSpawnEffect
+					type="ArmorOnSpawn"
+					value="9" />
+				<OnSpawnEffect
+					type="AlternativeEquipmentOnSpawn"
+					slot="Cape"
+					item="mp_rough_bearskin"
+					target="Player" />
+			</Perk>
+			<!-- Second perks-->
+			<Perk
+				game_mode="all"
+				name="{=s5qRvBOp}Marksman"
+				description="{=fVaqYLsw}Your experience as Marksman allows you to fire heavier arrows with more precision.{newline} {newline}Grants Stronger Arrows{newline} {newline}+100% Max Accuracy Duration"
+				icon="PerkStrongArrows"
+				perk_list="2">
+				<ConditionalEffect>
+					<Conditions>
+						<Condition
+							type="AgentStatus"
+							agent_status="OnFoot" />
+					</Conditions>
+					<Effects>
+						<Effect
+							type="DrivenProperty"
+							value="2.0"
+							driven_property="WeaponUnsteadyBeginTime"
+							is_ratio="true" />
+						<Effect
+							type="DrivenProperty"
+							value="2.0"
+							driven_property="WeaponUnsteadyEndTime"
+							is_ratio="true" />
+					</Effects>
+				</ConditionalEffect>
+				<OnSpawnEffect
+					type="AlternativeEquipmentOnSpawn"
+					slot="Item1"
+					item="mp_arrows_bodkin_strong" />
+			</Perk>
+			<Perk
+				game_mode="all"
+				name="{=xnDWqYKW}Hunter"
+				description="{=URPm3XjU}Your experience as a Hunter allows you hit mounts in critical places dealing more damage.{newline} {newline}Grants Barbed Arrows{newline} {newline}+50% Damage to Mounts"
+				icon="PerkHunter"
+				perk_list="2">
+				<Effect
+					type="MountDamage"
+					value="0.50"
+					hit_type="Ranged" />
+				<OnSpawnEffect
+					type="AlternativeEquipmentOnSpawn"
+					slot="Item1"
+					item="mp_arrows_bodkin_strong" />
+			</Perk>
+		</Perks>
+	</MPClassDivision>
+	<MPClassDivision
+		id="folk_heavy_cavalry_folkvangr"
+		hero="folk_heavy_cavalry_folkvangr"
+		troop="folk_heavy_cavalry_folkvangr"
+		hero_mount_idle_anim="act_sturgia_mp_druzhina_mount_idle"
+		troop_mount_idle_anim="act_horse_idle_1"
+		cost="200"
+		icon="Cavalry_Heavy"
+		armor="38"
+		movement_speed="0.73"
+		combat_movement_speed="0.6"
+		acceleration="2.8">
+		<Perks>
+			<!-- First perks-->
+			<Perk
+				game_mode="all"
+				name="{=VR2SwarS}Tougher Horse"
+				description="{=wiBmTEGi}Replaces mount with a more durable horse."
+				icon="PerkCharger"
+				perk_list="1">
+				<OnSpawnEffect
+					type="AlternativeEquipmentOnSpawn"
+					slot="Horse"
+					item="mp_sturgia_horse_tougher" />
+			</Perk>
+			<Perk
+				game_mode="all"
+				name="{=cfSgK0nk}Agile Horse"
+				description="{=5JQFx3EW}Replaces mount with a faster and more maneuverable horse."
+				icon="PerkAgileHorses"
+				perk_list="1">
+				<OnSpawnEffect
+					type="AlternativeEquipmentOnSpawn"
+					slot="Horse"
+					item="mp_sturgia_horse_agile" />
+			</Perk>
+			<Perk
+				game_mode="all"
+				name="{=WapSyVbv}Full Barding"
+				description="{=qwnHqTdO}Upgrades your horses armor."
+				icon="PerkFullBarding"
+				perk_list="1">
+				<OnSpawnEffect
+					type="AlternativeEquipmentOnSpawn"
+					slot="HorseHarness"
+					item="mp_chain_horse_harness" />
+			</Perk>
+			<!-- Second perks-->
+			<Perk
+				game_mode="all"
+				name="{=drDLzIzS}Druzhina"
+				description="{=NjXTLWSr}As an elite Druzhina you have refined your riding skill over the years.{newline} {newline}Grants Longer Lance{newline} {newline}+15 Riding skill"
+				icon="PerkLongerLances"
+				perk_list="2">
+				<Effect
+					type="MountManeuver"
+					value="0.10"
+					driven_property="AttributeRiding" />
+				<OnSpawnEffect
+					type="AlternativeEquipmentOnSpawn"
+					slot="Item2"
+					item="mp_sturgia_long_lance" />
+			</Perk>
+			<Perk
+				game_mode="all"
+				name="{=hchDYAKL}Lancer"
+				description="{=ewUPfiVM}You are an expert at fighting on horseback.{newline} {newline}Grants Heavy Lance{newline} {newline}+33% Speed Bonus with Pierce Attacks from mount"
+				icon="PerkCouchedHeavySpears"
+				perk_list="2">
+				<ConditionalEffect>
+					<Conditions>
+						<Condition
+							type="AgentStatus"
+							agent_status="OnMount" />
+					</Conditions>
+					<Effects>
+						<Effect
+							type="SpeedBonus"
+							value="1.33"
+							hit_type="Melee"
+							damage_type="Pierce"
+							is_ratio="true" />
+					</Effects>
+				</ConditionalEffect>
+				<OnSpawnEffect
+					type="AlternativeEquipmentOnSpawn"
+					slot="Item2"
+					item="mp_sturgia_heavy_lance" />
+			</Perk>
+			<Perk
+				game_mode="all"
+				name="{=v0RmrsJZ}Axe + Shield"
+				description="{=6hFRRoYP}When charging into the enemy lines, you took great pleasure in switching to your close combat weapons and wreak havoc.{newline} {newline}Grants a Bastard Axe {newline}Grants a Better Shield{newline} {newline}+10% Swing Speed while mounted"
+				icon="PerkShieldUpgrade"
+				perk_list="2">
+				<ConditionalEffect>
+					<Conditions>
+						<Condition
+							type="AgentStatus"
+							agent_status="OnMount" />
+					</Conditions>
+					<Effects>
+						<Effect
+							type="DrivenProperty"
+							value="0.1"
+							driven_property="SwingSpeedMultiplier" />
+					</Effects>
+				</ConditionalEffect>
+				<OnSpawnEffect
+					type="AlternativeEquipmentOnSpawn"
+					slot="Item1"
+					item="mp_viking_round_shield" />
+				<OnSpawnEffect
+					type="AlternativeEquipmentOnSpawn"
+					slot="Item0"
+					item="mp_vlandian_bastard_axe" />
+			</Perk>
+		</Perks>
+	</MPClassDivision>
+</MPClassDivisions>

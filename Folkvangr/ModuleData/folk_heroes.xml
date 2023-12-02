@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MPCharacters>
+	<!--Sturgia Heros-->
+	<NPCCharacter
+		id="folk_shock_infantry_folkvangr"
+		default_group="Infantry"
+		level="25"
+		name="{=RssJTUpL}Berserker"
+		occupation="Soldier"
+		culture="Culture.sturgia">
+		<face>
+			<!--face_key value="26.15;0.2617;0.3315;E000000;47000;0;0;5460305000000;0;0;280000" max_value="73.19;0.8;0.8667;BFC059A0038D4;FFFFFFFF887CFFFF;FFFEFFFB6FB7FFFF;FFFFFFFFFFFFFFFF;DCFF90DFFFFFF;0;0;480141"/-->
+			<BodyProperties
+				version="4"
+				age="26.15"
+				weight="0.2617"
+				build="0.3315"
+				key="000000000E0000000000000000047000000000000000000000000000000000000005460305000000000000000000000000000000000000000000000000A00000" />
+			<BodyPropertiesMax
+				version="4"
+				age="53.19"
+				weight="0.8"
+				build="0.8667"
+				key="000BFC059A0038D4FFFFFFFF887CFFFFFFFEFFFB6FB7FFFFFFFFFFFFFFFFFFFF000DCFF90DFFFFFF000000000000000000000000000000000000000001680141" />
+		</face>
+		<skills>
+			<skill
+				id="Riding"
+				value="15" />
+			<skill
+				id="OneHanded"
+				value="50" />
+			<skill
+				id="TwoHanded"
+				value="50" />
+			<skill
+				id="Polearm"
+				value="50" />
+			<skill
+				id="Crossbow"
+				value="20" />
+			<skill
+				id="Bow"
+				value="20" />
+			<skill
+				id="Throwing"
+				value="100" />
+		</skills>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment
+					slot="Head"
+					id="Item.mp_bearhead" />
+				<equipment
+					slot="Cape"
+					id="Item.mp_rough_bearskin" />
+				<equipment
+					slot="Body"
+					id="Item.mp_battanian_savage_armor" />
+				<equipment
+					slot="Gloves"
+					id="Item.mp_buttoned_leather_bracers" />
+				<equipment
+					slot="Leg"
+					id="Item.mp_battania_woodland_boots" />
+				<equipment
+					slot="Item0"
+					id="Item.mp_sturgia_twohanded_hammer" />
+				<equipment
+					slot="Item1"
+					id="Item.mp_sturgia_long_twohanded_axe" />
+				<equipment
+					slot="Item2"
+					id="Item.mp_sturgia_throwing_axe" />
+			</EquipmentRoster>
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="folk_heavy_infantry_folkvangr"
+		default_group="Infantry"
+		level="36"
+		name="{=4C4WiTb2}Varyag"
+		occupation="Soldier"
+		culture="Culture.sturgia">
+		<face>
+			<!--face_key value="26.15;0.2617;0.3315;E000000;47000;0;0;5460305000000;0;0;280000" max_value="73.19;0.8;0.8667;BFC059A0038D4;FFFFFFFF887CFFFF;FFFEFFFB6FB7FFFF;FFFFFFFFFFFFFFFF;DCFF90DFFFFFF;0;0;480141"/-->
+			<BodyProperties
+				version="4"
+				age="26.15"
+				weight="0.2617"
+				build="0.3315"
+				key="000000000E0000000000000000047000000000000000000000000000000000000005460305000000000000000000000000000000000000000000000000A00000" />
+			<BodyPropertiesMax
+				version="4"
+				age="53.19"
+				weight="0.8"
+				build="0.8667"
+				key="000BFC059A0038D4FFFFFFFF887CFFFFFFFEFFFB6FB7FFFFFFFFFFFFFFFFFFFF000DCFF90DFFFFFF000000000000000000000000000000000000000001680141" />
+		</face>
+		<skills>
+			<skill
+				id="Riding"
+				value="15" />
+			<skill
+				id="OneHanded"
+				value="50" />
+			<skill
+				id="TwoHanded"
+				value="50" />
+			<skill
+				id="Polearm"
+				value="50" />
+			<skill
+				id="Crossbow"
+				value="20" />
+			<skill
+				id="Bow"
+				value="20" />
+			<skill
+				id="Throwing"
+				value="100" />
+		</skills>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment
+					slot="Head"
+					id="Item.mp_lendman_helmet_over_full_mail" />
+				<equipment
+					slot="Cape"
+					id="Item.mp_rough_bearskin" />
+				<equipment
+					slot="Body"
+					id="Item.mp_northern_coat_of_plates" />
+				<equipment
+					slot="Gloves"
+					id="Item.mp_northern_plated_gloves" />
+				<equipment
+					slot="Leg"
+					id="Item.mp_northern_plated_boots" />
+				<equipment
+					slot="Item0"
+					id="Item.mp_leather_round_shield" />
+				<equipment
+					slot="Item1"
+					id="Item.mp_sturgia_northern_sword" />
+			</EquipmentRoster>
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="folk_light_ranged_folkvangr"
+		default_group="Ranged"
+		level="5"
+		name="{=huntertroop}Hunter"
+		occupation="Soldier"
+		culture="Culture.sturgia">
+		<face>
+			<!--face_key value="25.56;0.1951;0.2648;0;37000;0;0;4360304000000;0;0;300000" max_value="42.73;0.5333;0.4667;11FC05800038D4;FFFFFFFF8878FFFF;FFFEFFFB6FB7FFFF;FFFFFFFFFFFFFFFF;78FF507FFFFFF;0;0;480141"/-->
+			<BodyProperties
+				version="4"
+				age="25.56"
+				weight="0.1951"
+				build="0.2648"
+				key="00000000000000000000000000037000000000000000000000000000000000000004360304000000000000000000000000000000000000000000000000C80000" />
+			<BodyPropertiesMax
+				version="4"
+				age="42.73"
+				weight="0.5333"
+				build="0.4667"
+				key="0011FC05800038D4FFFFFFFF8878FFFFFFFEFFFB6FB7FFFFFFFFFFFFFFFFFFFF00078FF507FFFFFF000000000000000000000000000000000000000001680141" />
+		</face>
+		<skills>
+			<skill
+				id="Riding"
+				value="15" />
+			<skill
+				id="OneHanded"
+				value="50" />
+			<skill
+				id="TwoHanded"
+				value="50" />
+			<skill
+				id="Polearm"
+				value="50" />
+			<skill
+				id="Crossbow"
+				value="100" />
+			<skill
+				id="Bow"
+				value="100" />
+			<skill
+				id="Throwing"
+				value="100" />
+		</skills>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment
+					slot="Head"
+					id="Item.mp_goggled_helmet_over_mail" />
+				<equipment
+					slot="Body"
+					id="Item.mp_mail_shirt" />
+				<equipment
+					slot="Gloves"
+					id="Item.mp_highland_gloves" />
+				<equipment
+					slot="Leg"
+					id="Item.mp_khuzait_curved_boots" />
+				<equipment
+					slot="Item0"
+					id="Item.mp_long_bow" />
+				<equipment
+					slot="Item1"
+					id="Item.mp_arrows_bodkin" />
+				<equipment
+					slot="Item2"
+					id="Item.mp_sturgia_heavy_axe" />
+			</EquipmentRoster>
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="folk_heavy_cavalry_folkvangr"
+		default_group="Cavalry"
+		level="30"
+		name="{=k1Xr4rKn}Druzhinnik"
+		occupation="Soldier"
+		culture="Culture.sturgia">
+		<face>
+			<!--face_key value="26.15;0.2617;0.3315;E000000;47000;0;0;5460305000000;0;0;280000" max_value="73.19;0.8;0.8667;BFC059A0038D4;FFFFFFFF887CFFFF;FFFEFFFB6FB7FFFF;FFFFFFFFFFFFFFFF;DCFF90DFFFFFF;0;0;480141"/-->
+			<BodyProperties
+				version="4"
+				age="26.15"
+				weight="0.2617"
+				build="0.3315"
+				key="000000000E0000000000000000047000000000000000000000000000000000000005460305000000000000000000000000000000000000000000000000A00000" />
+			<BodyPropertiesMax
+				version="4"
+				age="73.19"
+				weight="0.8"
+				build="0.8667"
+				key="000BFC059A0038D4FFFFFFFF887CFFFFFFFEFFFB6FB7FFFFFFFFFFFFFFFFFFFF000DCFF90DFFFFFF000000000000000000000000000000000000000001680141" />
+		</face>
+		<skills>
+			<skill
+				id="Riding"
+				value="150" />
+			<skill
+				id="OneHanded"
+				value="50" />
+			<skill
+				id="TwoHanded"
+				value="50" />
+			<skill
+				id="Polearm"
+				value="150" />
+			<skill
+				id="Crossbow"
+				value="50" />
+			<skill
+				id="Bow"
+				value="50" />
+			<skill
+				id="Throwing"
+				value="100" />
+		</skills>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment
+					slot="Head"
+					id="Item.mp_northern_warlord_helmet" />
+				<equipment
+					slot="Cape"
+					id="Item.mp_wolf_shoulder" />
+				<equipment
+					slot="Body"
+					id="Item.mp_sturgian_lamellar_fortified" />
+				<equipment
+					slot="Gloves"
+					id="Item.mp_northern_plated_gloves" />
+				<equipment
+					slot="Leg"
+					id="Item.mp_northern_plated_boots" />
+				<equipment
+					slot="Item0"
+					id="Item.mp_sturgia_cavalry_axe" />
+				<equipment
+					slot="Item1"
+					id="Item.mp_worn_horsemans_kite_shield" />
+				<equipment
+					slot="Item2"
+					id="Item.mp_sturgia_lance" />
+				<equipment
+					slot="Horse"
+					id="Item.mp_sturgia_horse_war" />
+				<equipment
+					slot="HorseHarness"
+					id="Item.mp_northern_ring_barding" />
+			</EquipmentRoster>
+		</Equipments>
+	</NPCCharacter>
+</MPCharacters>
